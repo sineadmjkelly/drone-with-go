@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_drone_with_go_1683726764579-pr-trigger-input-set
+  identifier: Build_drone_with_go_1683726764579prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: my_harness_project
+  pipeline:
+    identifier: Build_drone_with_go_1683726764579
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
